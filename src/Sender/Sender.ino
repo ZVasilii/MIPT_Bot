@@ -23,12 +23,11 @@ void setup() {
 }
 
 void loop() {
-
-  Command cmd(42, 53);
-  uc snd[2] = {42, 53};
-  uc a = 55;
-  //Serial.print(String(snd[0]));
-  //Serial.println(String(snd[1]));
-  rmSnd.write(&a, sizeof(a));
+  uc left = analogRead(0) / 4;
+  uc right = analogRead(1) / 4;
+  
+  Command cmd(left, right);
+  Serial.println(String(left) + " " + String(right));
+  rmSnd.write(&cmd, sizeof(cmd));
 
 }
