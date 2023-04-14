@@ -27,10 +27,11 @@ int16_t rattlingOff(int16_t value)
 
 int16_t rattlingOffCenter(int16_t value)
 {
+  int16_t error = 8;
   int16_t middle = 256 / 2;
-  if (abs(value - middle) < 8) 
+  if (abs(value - middle) < error) 
     return 0;
-  return value;  
+  return map(abs(value - middle), error, middle, 1, 255);  
 }
 
 void setPowerOnMotors(int16_t leftMotor, int16_t rightMotor)

@@ -15,7 +15,7 @@ void setup() {
   rmSnd.setChannel(1);
   rmSnd.setDataRate(RF24_1MBPS);
   rmSnd.setPALevel(RF24_PA_HIGH);
-  rmSnd.openWritingPipe(0x1234567890LL);
+  rmSnd.openWritingPipe(0x1234567877LL);
   rmSnd.stopListening();
 
   Serial.begin(9600);

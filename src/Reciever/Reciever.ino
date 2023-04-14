@@ -17,7 +17,7 @@ void setup() {
   rmRcv.setChannel(1);
   rmRcv.setDataRate(RF24_1MBPS);
   rmRcv.setPALevel(RF24_PA_HIGH);
-  rmRcv.openReadingPipe(0, 0x1234567890LL);
+  rmRcv.openReadingPipe(0, 0x1234567877LL);
   rmRcv.startListening();
 
   Serial.begin(9600);
