@@ -70,8 +70,24 @@
 * 2 джойстика
 * *на время запуска нужно питание платы, подойдёт питание от USB повербанком или любым другим способом*
 
+---
+
 ### Механическая часть
 
 В папке `src` лежит файл `robot_parts.dxf` с `dxf` исходниками для вырезания деталей робота на лазере.
 
 ![image](https://github.com/ZVasilii/MIPT_Bot/assets/27261970/ecb708eb-ce50-423e-b817-f158554e9da1)
+
+---
+
+### Схема подключения компонентов
+
+Робот
+
+![image](https://github.com/ZVasilii/MIPT_Bot/blob/master/README/robot_scheme.png)
+
+---
+
+Пульт управления
+
+![image](https://github.com/ZVasilii/MIPT_Bot/blob/master/README/remote_control_scheme.png)
